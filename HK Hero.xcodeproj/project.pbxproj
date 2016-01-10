@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C81B405C1C430A540039A395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B405B1C430A540039A395 /* AppDelegate.swift */; };
+		C81B405E1C430A540039A395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B405D1C430A540039A395 /* ViewController.swift */; };
+		C81B40611C430A540039A395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81B405F1C430A540039A395 /* Main.storyboard */; };
+		C81B40631C430A540039A395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B40621C430A540039A395 /* Assets.xcassets */; };
+		C81B40661C430A540039A395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81B40641C430A540039A395 /* LaunchScreen.storyboard */; };
+		C81B40711C430A550039A395 /* HK_HeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B40701C430A550039A395 /* HK_HeroTests.swift */; };
+		C81B407C1C430A550039A395 /* HK_HeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B407B1C430A550039A395 /* HK_HeroUITests.swift */; };
+		C81B40811C430A550039A395 /* HK Hero WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C81B40801C430A550039A395 /* HK Hero WatchKit App.app */; };
+		C81B40871C430A550039A395 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81B40851C430A550039A395 /* Interface.storyboard */; };
+		C81B40891C430A550039A395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B40881C430A550039A395 /* Assets.xcassets */; };
+		C81B40901C430A550039A395 /* HK Hero WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C81B408F1C430A550039A395 /* HK Hero WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C81B40971C430A550039A395 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B40961C430A550039A395 /* InterfaceController.swift */; };
+		C81B40991C430A550039A395 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B40981C430A550039A395 /* ExtensionDelegate.swift */; };
+		C81B409B1C430A550039A395 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B409A1C430A550039A395 /* NotificationController.swift */; };
+		C81B409D1C430A550039A395 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B409C1C430A550039A395 /* GlanceController.swift */; };
+		C81B409F1C430A550039A395 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B409E1C430A550039A395 /* ComplicationController.swift */; };
+		C81B40A11C430A550039A395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B40A01C430A550039A395 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C81B406D1C430A550039A395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81B40501C430A540039A395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81B40571C430A540039A395;
+			remoteInfo = "HK Hero";
+		};
+		C81B40781C430A550039A395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81B40501C430A540039A395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81B40571C430A540039A395;
+			remoteInfo = "HK Hero";
+		};
+		C81B40821C430A550039A395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81B40501C430A540039A395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81B407F1C430A550039A395;
+			remoteInfo = "HK Hero WatchKit App";
+		};
+		C81B40911C430A550039A395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81B40501C430A540039A395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81B408E1C430A550039A395;
+			remoteInfo = "HK Hero WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C81B40A81C430A550039A395 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C81B40901C430A550039A395 /* HK Hero WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B40AC1C430A550039A395 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C81B40811C430A550039A395 /* HK Hero WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C81B40581C430A540039A395 /* HK Hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HK Hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81B405B1C430A540039A395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C81B405D1C430A540039A395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C81B40601C430A540039A395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C81B40621C430A540039A395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C81B40651C430A540039A395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C81B40671C430A540039A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81B406C1C430A550039A395 /* HK HeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HK HeroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81B40701C430A550039A395 /* HK_HeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HK_HeroTests.swift; sourceTree = "<group>"; };
+		C81B40721C430A550039A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81B40771C430A550039A395 /* HK HeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HK HeroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81B407B1C430A550039A395 /* HK_HeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HK_HeroUITests.swift; sourceTree = "<group>"; };
+		C81B407D1C430A550039A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81B40801C430A550039A395 /* HK Hero WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HK Hero WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81B40861C430A550039A395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C81B40881C430A550039A395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C81B408A1C430A550039A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81B408F1C430A550039A395 /* HK Hero WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HK Hero WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81B40951C430A550039A395 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C81B40961C430A550039A395 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C81B40981C430A550039A395 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C81B409A1C430A550039A395 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C81B409C1C430A550039A395 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		C81B409E1C430A550039A395 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C81B40A01C430A550039A395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C81B40A21C430A550039A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C81B40551C430A540039A395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B40691C430A550039A395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B40741C430A550039A395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B408C1C430A550039A395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C81B404F1C430A540039A395 = {
+			isa = PBXGroup;
+			children = (
+				C81B405A1C430A540039A395 /* HK Hero */,
+				C81B406F1C430A550039A395 /* HK HeroTests */,
+				C81B407A1C430A550039A395 /* HK HeroUITests */,
+				C81B40841C430A550039A395 /* HK Hero WatchKit App */,
+				C81B40931C430A550039A395 /* HK Hero WatchKit Extension */,
+				C81B40591C430A540039A395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C81B40591C430A540039A395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C81B40581C430A540039A395 /* HK Hero.app */,
+				C81B406C1C430A550039A395 /* HK HeroTests.xctest */,
+				C81B40771C430A550039A395 /* HK HeroUITests.xctest */,
+				C81B40801C430A550039A395 /* HK Hero WatchKit App.app */,
+				C81B408F1C430A550039A395 /* HK Hero WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C81B405A1C430A540039A395 /* HK Hero */ = {
+			isa = PBXGroup;
+			children = (
+				C81B405B1C430A540039A395 /* AppDelegate.swift */,
+				C81B405D1C430A540039A395 /* ViewController.swift */,
+				C81B405F1C430A540039A395 /* Main.storyboard */,
+				C81B40621C430A540039A395 /* Assets.xcassets */,
+				C81B40641C430A540039A395 /* LaunchScreen.storyboard */,
+				C81B40671C430A540039A395 /* Info.plist */,
+			);
+			path = "HK Hero";
+			sourceTree = "<group>";
+		};
+		C81B406F1C430A550039A395 /* HK HeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				C81B40701C430A550039A395 /* HK_HeroTests.swift */,
+				C81B40721C430A550039A395 /* Info.plist */,
+			);
+			path = "HK HeroTests";
+			sourceTree = "<group>";
+		};
+		C81B407A1C430A550039A395 /* HK HeroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C81B407B1C430A550039A395 /* HK_HeroUITests.swift */,
+				C81B407D1C430A550039A395 /* Info.plist */,
+			);
+			path = "HK HeroUITests";
+			sourceTree = "<group>";
+		};
+		C81B40841C430A550039A395 /* HK Hero WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C81B40851C430A550039A395 /* Interface.storyboard */,
+				C81B40881C430A550039A395 /* Assets.xcassets */,
+				C81B408A1C430A550039A395 /* Info.plist */,
+			);
+			path = "HK Hero WatchKit App";
+			sourceTree = "<group>";
+		};
+		C81B40931C430A550039A395 /* HK Hero WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C81B40961C430A550039A395 /* InterfaceController.swift */,
+				C81B40981C430A550039A395 /* ExtensionDelegate.swift */,
+				C81B409A1C430A550039A395 /* NotificationController.swift */,
+				C81B409C1C430A550039A395 /* GlanceController.swift */,
+				C81B409E1C430A550039A395 /* ComplicationController.swift */,
+				C81B40A01C430A550039A395 /* Assets.xcassets */,
+				C81B40A21C430A550039A395 /* Info.plist */,
+				C81B40941C430A550039A395 /* Supporting Files */,
+			);
+			path = "HK Hero WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C81B40941C430A550039A395 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C81B40951C430A550039A395 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C81B40571C430A540039A395 /* HK Hero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81B40AD1C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero" */;
+			buildPhases = (
+				C81B40541C430A540039A395 /* Sources */,
+				C81B40551C430A540039A395 /* Frameworks */,
+				C81B40561C430A540039A395 /* Resources */,
+				C81B40AC1C430A550039A395 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C81B40831C430A550039A395 /* PBXTargetDependency */,
+			);
+			name = "HK Hero";
+			productName = "HK Hero";
+			productReference = C81B40581C430A540039A395 /* HK Hero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C81B406B1C430A550039A395 /* HK HeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81B40B01C430A550039A395 /* Build configuration list for PBXNativeTarget "HK HeroTests" */;
+			buildPhases = (
+				C81B40681C430A550039A395 /* Sources */,
+				C81B40691C430A550039A395 /* Frameworks */,
+				C81B406A1C430A550039A395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C81B406E1C430A550039A395 /* PBXTargetDependency */,
+			);
+			name = "HK HeroTests";
+			productName = "HK HeroTests";
+			productReference = C81B406C1C430A550039A395 /* HK HeroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C81B40761C430A550039A395 /* HK HeroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81B40B31C430A550039A395 /* Build configuration list for PBXNativeTarget "HK HeroUITests" */;
+			buildPhases = (
+				C81B40731C430A550039A395 /* Sources */,
+				C81B40741C430A550039A395 /* Frameworks */,
+				C81B40751C430A550039A395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C81B40791C430A550039A395 /* PBXTargetDependency */,
+			);
+			name = "HK HeroUITests";
+			productName = "HK HeroUITests";
+			productReference = C81B40771C430A550039A395 /* HK HeroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C81B407F1C430A550039A395 /* HK Hero WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81B40A91C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero WatchKit App" */;
+			buildPhases = (
+				C81B407E1C430A550039A395 /* Resources */,
+				C81B40A81C430A550039A395 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C81B40921C430A550039A395 /* PBXTargetDependency */,
+			);
+			name = "HK Hero WatchKit App";
+			productName = "HK Hero WatchKit App";
+			productReference = C81B40801C430A550039A395 /* HK Hero WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C81B408E1C430A550039A395 /* HK Hero WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81B40A51C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero WatchKit Extension" */;
+			buildPhases = (
+				C81B408B1C430A550039A395 /* Sources */,
+				C81B408C1C430A550039A395 /* Frameworks */,
+				C81B408D1C430A550039A395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HK Hero WatchKit Extension";
+			productName = "HK Hero WatchKit Extension";
+			productReference = C81B408F1C430A550039A395 /* HK Hero WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C81B40501C430A540039A395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Small, Jeff";
+				TargetAttributes = {
+					C81B40571C430A540039A395 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C81B406B1C430A550039A395 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C81B40571C430A540039A395;
+					};
+					C81B40761C430A550039A395 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C81B40571C430A540039A395;
+					};
+					C81B407F1C430A550039A395 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C81B408E1C430A550039A395 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C81B40531C430A540039A395 /* Build configuration list for PBXProject "HK Hero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C81B404F1C430A540039A395;
+			productRefGroup = C81B40591C430A540039A395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C81B40571C430A540039A395 /* HK Hero */,
+				C81B406B1C430A550039A395 /* HK HeroTests */,
+				C81B40761C430A550039A395 /* HK HeroUITests */,
+				C81B407F1C430A550039A395 /* HK Hero WatchKit App */,
+				C81B408E1C430A550039A395 /* HK Hero WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C81B40561C430A540039A395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B40661C430A540039A395 /* LaunchScreen.storyboard in Resources */,
+				C81B40631C430A540039A395 /* Assets.xcassets in Resources */,
+				C81B40611C430A540039A395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B406A1C430A550039A395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B40751C430A550039A395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B407E1C430A550039A395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B40891C430A550039A395 /* Assets.xcassets in Resources */,
+				C81B40871C430A550039A395 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B408D1C430A550039A395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B40A11C430A550039A395 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C81B40541C430A540039A395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B405E1C430A540039A395 /* ViewController.swift in Sources */,
+				C81B405C1C430A540039A395 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B40681C430A550039A395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B40711C430A550039A395 /* HK_HeroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B40731C430A550039A395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B407C1C430A550039A395 /* HK_HeroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81B408B1C430A550039A395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81B409B1C430A550039A395 /* NotificationController.swift in Sources */,
+				C81B40991C430A550039A395 /* ExtensionDelegate.swift in Sources */,
+				C81B409F1C430A550039A395 /* ComplicationController.swift in Sources */,
+				C81B40971C430A550039A395 /* InterfaceController.swift in Sources */,
+				C81B409D1C430A550039A395 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C81B406E1C430A550039A395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C81B40571C430A540039A395 /* HK Hero */;
+			targetProxy = C81B406D1C430A550039A395 /* PBXContainerItemProxy */;
+		};
+		C81B40791C430A550039A395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C81B40571C430A540039A395 /* HK Hero */;
+			targetProxy = C81B40781C430A550039A395 /* PBXContainerItemProxy */;
+		};
+		C81B40831C430A550039A395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C81B407F1C430A550039A395 /* HK Hero WatchKit App */;
+			targetProxy = C81B40821C430A550039A395 /* PBXContainerItemProxy */;
+		};
+		C81B40921C430A550039A395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C81B408E1C430A550039A395 /* HK Hero WatchKit Extension */;
+			targetProxy = C81B40911C430A550039A395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C81B405F1C430A540039A395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C81B40601C430A540039A395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C81B40641C430A540039A395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C81B40651C430A540039A395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C81B40851C430A550039A395 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C81B40861C430A550039A395 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C81B40A31C430A550039A395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C81B40A41C430A550039A395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C81B40A61C430A550039A395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "HK Hero WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C81B40A71C430A550039A395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "HK Hero WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		C81B40AA1C430A550039A395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HK_Hero_WatchKit_Extension;
+				INFOPLIST_FILE = "HK Hero WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		C81B40AB1C430A550039A395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HK_Hero_WatchKit_Extension;
+				INFOPLIST_FILE = "HK Hero WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		C81B40AE1C430A550039A395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HK Hero/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C81B40AF1C430A550039A395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HK Hero/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C81B40B11C430A550039A395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HK HeroTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-HeroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HK Hero.app/HK Hero";
+			};
+			name = Debug;
+		};
+		C81B40B21C430A550039A395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HK HeroTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-HeroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HK Hero.app/HK Hero";
+			};
+			name = Release;
+		};
+		C81B40B41C430A550039A395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HK HeroUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-HeroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HK Hero";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C81B40B51C430A550039A395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HK HeroUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-HeroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HK Hero";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C81B40531C430A540039A395 /* Build configuration list for PBXProject "HK Hero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81B40A31C430A550039A395 /* Debug */,
+				C81B40A41C430A550039A395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C81B40A51C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81B40A61C430A550039A395 /* Debug */,
+				C81B40A71C430A550039A395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C81B40A91C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81B40AA1C430A550039A395 /* Debug */,
+				C81B40AB1C430A550039A395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C81B40AD1C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81B40AE1C430A550039A395 /* Debug */,
+				C81B40AF1C430A550039A395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C81B40B01C430A550039A395 /* Build configuration list for PBXNativeTarget "HK HeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81B40B11C430A550039A395 /* Debug */,
+				C81B40B21C430A550039A395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C81B40B31C430A550039A395 /* Build configuration list for PBXNativeTarget "HK HeroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81B40B41C430A550039A395 /* Debug */,
+				C81B40B51C430A550039A395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C81B40501C430A540039A395 /* Project object */;
+}
