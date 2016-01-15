@@ -1,21 +1,133 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HK_Hero_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Start Workout" id="ibX-B4-WDV">
+                            <connections>
+                                <segue destination="lEN-YS-vVg" kind="push" id="dni-xK-Ss0"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Workout Type Controller-->
+        <scene sceneID="cMp-KR-z6u">
+            <objects>
+                <controller identifier="workoutTypeController" id="lEN-YS-vVg" userLabel="Workout Type Controller" customClass="WorkoutTypeController" customModule="HK_Hero_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="200" alignment="left" layout="vertical" id="FRu-ct-fhz">
+                            <items>
+                                <label alignment="left" text="Select a workout:" id="Nof-5Q-EX6"/>
+                                <button width="1" alignment="left" title="🏹 Archery" id="t39-qj-R0h">
+                                    <connections>
+                                        <segue destination="KcO-5f-fgn" kind="push" identifier="archeryIdentifier" id="qWq-q0-DCM"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="🏆 Martial Arts" id="COh-E9-cLR">
+                                    <connections>
+                                        <segue destination="KcO-5f-fgn" kind="push" identifier="martialArtsIdentifier" id="nLf-jk-sda"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="🏃 Running" id="xNi-ZD-Wsc">
+                                    <connections>
+                                        <segue destination="KcO-5f-fgn" kind="push" identifier="runningIdentifier" id="o01-aV-QJL"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="🏊 Swimming" id="3ae-Th-M2G">
+                                    <connections>
+                                        <segue destination="KcO-5f-fgn" kind="push" identifier="swimmingIdentifier" id="exe-31-xgo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="471" y="364.5"/>
+        </scene>
+        <!--Start Workout Controller-->
+        <scene sceneID="BJh-f4-r5p">
+            <objects>
+                <controller identifier="startWorkoutController" id="KcO-5f-fgn" userLabel="Start Workout Controller" customClass="StartWorkoutController" customModule="HK_Hero_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="93" alignment="left" id="cjh-dh-aNU">
+                            <items>
+                                <timer width="136" height="78.5" alignment="left" textAlignment="center" previewedSeconds="0" id="7Nx-f2-hUK"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Start" id="Lxe-GQ-gqd">
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startStopWorkoutButtonTapped" destination="KcO-5f-fgn" id="lmm-Sz-XGG"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="startStopButton" destination="Lxe-GQ-gqd" id="UzG-uQ-AYq"/>
+                        <outlet property="workoutTimer" destination="7Nx-f2-hUK" id="4G0-ZS-U7e"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="709" y="343"/>
+        </scene>
+        <!--Workout Summary Controller-->
+        <scene sceneID="WMQ-ry-qGb">
+            <objects>
+                <controller identifier="workoutSummaryController" id="rL5-Nu-HAa" userLabel="Workout Summary Controller" customClass="WorkoutSummaryController" customModule="HK_Hero_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="53" alignment="left" layout="vertical" id="LbW-CH-gm0">
+                            <items>
+                                <label alignment="left" text="❤️ End Heart Rate" minimumScaleFactor="0.69999999999999996" id="xeM-q0-HLL"/>
+                                <label width="136" height="24.5" alignment="left" text="--" textAlignment="center" id="pFX-iO-qeg"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="jRT-am-kbf">
+                            <color key="color" red="0.078431372550000003" green="0.74509803919999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="56" alignment="left" layout="vertical" id="tDI-Tb-CQs">
+                            <items>
+                                <label alignment="left" text="🔥 Calories Burned" minimumScaleFactor="0.69999999999999996" id="d4U-DQ-e4G"/>
+                                <label width="136" height="30.5" alignment="left" text="--" textAlignment="center" id="wqN-H0-FbU"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="a6l-jJ-FhP">
+                            <color key="color" red="0.078431372550000003" green="0.74509803919999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <group width="1" height="65" alignment="left" layout="vertical" id="qLB-BN-laq">
+                            <items>
+                                <label alignment="left" text="💙 Avg. Heart Rate" minimumScaleFactor="0.69999999999999996" id="vN6-3x-hWM"/>
+                                <label width="136" height="30.5" alignment="left" text="--" textAlignment="center" id="pV8-Ph-MCI"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="🏚 Home" id="mB2-R5-eGq">
+                            <connections>
+                                <action selector="homeButtonTapped" destination="rL5-Nu-HAa" id="EbT-8e-c37"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="averageHeartRateLabel" destination="pV8-Ph-MCI" id="RUP-Qp-vPH"/>
+                        <outlet property="caloriesBurnedLabel" destination="wqN-H0-FbU" id="7aZ-Ej-L5G"/>
+                        <outlet property="heartRateLabel" destination="pFX-iO-qeg" id="n3k-WA-B6l"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="938" y="357"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="target">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="HK_Hero_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -44,9 +156,12 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="HK_Hero_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="exe-31-xgo"/>
+    </inferredMetricsTieBreakers>
 </document>

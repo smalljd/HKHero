@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+import HealthKit
+
+class HealthStore {
+    // Add custom methods to extend the default HealthStore
+    static let defaultStore = HKHealthStore()
+    private init() {}
+}

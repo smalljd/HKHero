@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import HealthKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let shareTypes = Set<HKSampleType>(arrayLiteral:
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!,
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!,
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)!
+        )
+        AppDelegate.getHealthStore().requestAuthorizationToShareTypes(shareTypes, readTypes: shareTypes) { (success, error) -> Void in
+            if !success {
+                print("Access denied")
+            }
+            if error != nil {
+                print("Error requesting permission: \(error!.userInfo)")
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

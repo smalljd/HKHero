@@ -7,9 +7,14 @@
 //
 
 import WatchKit
+import HealthKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    
+    class func getHealthStore() -> HKHealthStore {
+        return HealthStore.defaultStore
+    }
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
     }

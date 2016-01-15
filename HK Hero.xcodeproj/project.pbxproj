@@ -24,6 +24,15 @@
 		C81B409D1C430A550039A395 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B409C1C430A550039A395 /* GlanceController.swift */; };
 		C81B409F1C430A550039A395 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B409E1C430A550039A395 /* ComplicationController.swift */; };
 		C81B40A11C430A550039A395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B40A01C430A550039A395 /* Assets.xcassets */; };
+		C81B40B71C430A640039A395 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B40B61C430A640039A395 /* HealthKit.framework */; };
+		C81B40BC1C430A870039A395 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B40BB1C430A870039A395 /* HealthKit.framework */; };
+		C81B40DE1C431D1F0039A395 /* StartWorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B40DD1C431D1F0039A395 /* StartWorkoutController.swift */; };
+		C81B40E01C431FB10039A395 /* WorkoutTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B40DF1C431FB10039A395 /* WorkoutTypeController.swift */; };
+		C81B40E21C4324960039A395 /* WorkoutSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81B40E11C4324960039A395 /* WorkoutSummaryController.swift */; };
+		C84696BE1C4331FB00E5FC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B40621C430A540039A395 /* Assets.xcassets */; };
+		C84696BF1C4331FC00E5FC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81B40621C430A540039A395 /* Assets.xcassets */; };
+		C8AC43B31C43341E00E259CE /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC43B21C43341E00E259CE /* HealthStore.swift */; };
+		C8AC43B41C43344900E259CE /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC43B21C43341E00E259CE /* HealthStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +118,15 @@
 		C81B409E1C430A550039A395 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		C81B40A01C430A550039A395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81B40A21C430A550039A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81B40B61C430A640039A395 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		C81B40B81C430A640039A395 /* HK Hero.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HK Hero.entitlements"; sourceTree = "<group>"; };
+		C81B40B91C430A790039A395 /* HK Hero WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HK Hero WatchKit App.entitlements"; sourceTree = "<group>"; };
+		C81B40BA1C430A870039A395 /* HK Hero WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "HK Hero WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C81B40BB1C430A870039A395 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		C81B40DD1C431D1F0039A395 /* StartWorkoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartWorkoutController.swift; sourceTree = "<group>"; };
+		C81B40DF1C431FB10039A395 /* WorkoutTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTypeController.swift; sourceTree = "<group>"; };
+		C81B40E11C4324960039A395 /* WorkoutSummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryController.swift; sourceTree = "<group>"; };
+		C8AC43B21C43341E00E259CE /* HealthStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81B40B71C430A640039A395 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81B40BC1C430A870039A395 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +166,8 @@
 		C81B404F1C430A540039A395 = {
 			isa = PBXGroup;
 			children = (
+				C81B40BB1C430A870039A395 /* HealthKit.framework */,
+				C81B40B61C430A640039A395 /* HealthKit.framework */,
 				C81B405A1C430A540039A395 /* HK Hero */,
 				C81B406F1C430A550039A395 /* HK HeroTests */,
 				C81B407A1C430A550039A395 /* HK HeroUITests */,
@@ -170,6 +192,9 @@
 		C81B405A1C430A540039A395 /* HK Hero */ = {
 			isa = PBXGroup;
 			children = (
+				C8AC43B11C43340E00E259CE /* Health Store */,
+				C81B40BD1C430C8B0039A395 /* Resources */,
+				C81B40B81C430A640039A395 /* HK Hero.entitlements */,
 				C81B405B1C430A540039A395 /* AppDelegate.swift */,
 				C81B405D1C430A540039A395 /* ViewController.swift */,
 				C81B405F1C430A540039A395 /* Main.storyboard */,
@@ -201,6 +226,7 @@
 		C81B40841C430A550039A395 /* HK Hero WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				C81B40B91C430A790039A395 /* HK Hero WatchKit App.entitlements */,
 				C81B40851C430A550039A395 /* Interface.storyboard */,
 				C81B40881C430A550039A395 /* Assets.xcassets */,
 				C81B408A1C430A550039A395 /* Info.plist */,
@@ -211,7 +237,8 @@
 		C81B40931C430A550039A395 /* HK Hero WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C81B40961C430A550039A395 /* InterfaceController.swift */,
+				C81B40DC1C431CE70039A395 /* Interface Controllers */,
+				C81B40BA1C430A870039A395 /* HK Hero WatchKit Extension.entitlements */,
 				C81B40981C430A550039A395 /* ExtensionDelegate.swift */,
 				C81B409A1C430A550039A395 /* NotificationController.swift */,
 				C81B409C1C430A550039A395 /* GlanceController.swift */,
@@ -229,6 +256,32 @@
 				C81B40951C430A550039A395 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C81B40BD1C430C8B0039A395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C81B40DC1C431CE70039A395 /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C81B40961C430A550039A395 /* InterfaceController.swift */,
+				C81B40DD1C431D1F0039A395 /* StartWorkoutController.swift */,
+				C81B40DF1C431FB10039A395 /* WorkoutTypeController.swift */,
+				C81B40E11C4324960039A395 /* WorkoutSummaryController.swift */,
+			);
+			name = "Interface Controllers";
+			sourceTree = "<group>";
+		};
+		C8AC43B11C43340E00E259CE /* Health Store */ = {
+			isa = PBXGroup;
+			children = (
+				C8AC43B21C43341E00E259CE /* HealthStore.swift */,
+			);
+			name = "Health Store";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +388,12 @@
 				TargetAttributes = {
 					C81B40571C430A540039A395 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GDP24D6J8J;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					C81B406B1C430A550039A395 = {
 						CreatedOnToolsVersion = 7.2;
@@ -346,9 +405,21 @@
 					};
 					C81B407F1C430A550039A395 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GDP24D6J8J;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C81B408E1C430A550039A395 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GDP24D6J8J;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -404,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C81B40891C430A550039A395 /* Assets.xcassets in Resources */,
+				C84696BF1C4331FC00E5FC18 /* Assets.xcassets in Resources */,
 				C81B40871C430A550039A395 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84696BE1C4331FB00E5FC18 /* Assets.xcassets in Resources */,
 				C81B40A11C430A550039A395 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C81B405E1C430A540039A395 /* ViewController.swift in Sources */,
+				C8AC43B31C43341E00E259CE /* HealthStore.swift in Sources */,
 				C81B405C1C430A540039A395 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,10 +522,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81B40DE1C431D1F0039A395 /* StartWorkoutController.swift in Sources */,
 				C81B409B1C430A550039A395 /* NotificationController.swift in Sources */,
+				C81B40E01C431FB10039A395 /* WorkoutTypeController.swift in Sources */,
 				C81B40991C430A550039A395 /* ExtensionDelegate.swift in Sources */,
 				C81B409F1C430A550039A395 /* ComplicationController.swift in Sources */,
 				C81B40971C430A550039A395 /* InterfaceController.swift in Sources */,
+				C81B40E21C4324960039A395 /* WorkoutSummaryController.swift in Sources */,
+				C8AC43B41C43344900E259CE /* HealthStore.swift in Sources */,
 				C81B409D1C430A550039A395 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,10 +672,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HK Hero WatchKit Extension/HK Hero WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "HK Hero WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -609,10 +691,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HK Hero WatchKit Extension/HK Hero WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "HK Hero WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -624,11 +710,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HK Hero WatchKit App/HK Hero WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = HK_Hero_WatchKit_Extension;
 				INFOPLIST_FILE = "HK Hero WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -640,11 +730,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HK Hero WatchKit App/HK Hero WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = HK_Hero_WatchKit_Extension;
 				INFOPLIST_FILE = "HK Hero WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -656,10 +750,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HK Hero/HK Hero.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "HK Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -667,10 +765,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HK Hero/HK Hero.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "HK Hero/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.small.HK-Hero";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -741,6 +843,7 @@
 				C81B40A71C430A550039A395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C81B40A91C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +852,7 @@
 				C81B40AB1C430A550039A395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C81B40AD1C430A550039A395 /* Build configuration list for PBXNativeTarget "HK Hero" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +861,7 @@
 				C81B40AF1C430A550039A395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C81B40B01C430A550039A395 /* Build configuration list for PBXNativeTarget "HK HeroTests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +870,7 @@
 				C81B40B21C430A550039A395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C81B40B31C430A550039A395 /* Build configuration list for PBXNativeTarget "HK HeroUITests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +879,7 @@
 				C81B40B51C430A550039A395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

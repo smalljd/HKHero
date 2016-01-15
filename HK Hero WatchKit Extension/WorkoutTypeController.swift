@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import HealthKit
 
 class WorkoutTypeController: WKInterfaceController {
 
@@ -28,4 +28,24 @@ class WorkoutTypeController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+        
+        if segueIdentifier.caseInsensitiveCompare("archeryIdentifier") == .OrderedSame {
+            return "archery"
+        }
+        
+        if segueIdentifier.caseInsensitiveCompare("martialArtsIdentifier") == .OrderedSame {
+            return "martial arts"
+        }
+        
+        if segueIdentifier.caseInsensitiveCompare("runningIdentifier") == .OrderedSame {
+            return "running"
+        }
+        
+        if segueIdentifier.caseInsensitiveCompare("swimmingIdentifier") == .OrderedSame {
+            return "swimming"
+        }
+        
+        return "martial arts"
+    }
 }
