@@ -125,7 +125,7 @@ class WorkoutSummaryController: WKInterfaceController {
                 
                 dispatch_async(dispatch_get_main_queue(), {
                     if let heartRate = results.first as? HKQuantitySample {
-                        let bpm = heartRate.quantity.doubleValueForUnit(HKUnit(fromString: "count/m"))
+                        let bpm = heartRate.quantity.doubleValueForUnit(HKUnit(fromString: "count/s")) * 60.0
                         self.heartRateLabel.setText("\(bpm) BPM")
                     }
                 })
